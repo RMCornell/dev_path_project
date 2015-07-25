@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150725061355) do
+ActiveRecord::Schema.define(version: 20150725221310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,26 @@ ActiveRecord::Schema.define(version: 20150725061355) do
     t.integer  "zip"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "forms", force: :cascade do |t|
+    t.boolean  "completed_person",                         default: false
+    t.boolean  "completed_phone",                          default: false
+    t.string   "client_name"
+    t.string   "case_manager"
+    t.string   "date"
+    t.string   "location"
+    t.boolean  "letters_of_recommendation",                default: false
+    t.string   "letters_of_recommendation_comment"
+    t.boolean  "signature_page",                           default: false
+    t.string   "signature_page_comment"
+    t.boolean  "medicaid_eligibility",                     default: false
+    t.string   "medicaid_eligibility_comments"
+    t.boolean  "medicaid_eligibility_follow_up",           default: false
+    t.boolean  "medicaid_eligibility_follow_up_completed", default: false
+    t.string   "medicaid_eligiblility_follow_up_comments"
+    t.datetime "created_at",                                               null: false
+    t.datetime "updated_at",                                               null: false
   end
 
 end

@@ -49,3 +49,43 @@ clients
   zip_code
   case_manager_id: belongs_to: case_manager
 
+Form - 3-Month Monitoring Checklist
+
+form model
+  Completed_person
+  completed_phone
+  client_name
+  case_manager
+  date
+  location_of_interview
+
+  letters_of_recommendation
+  signature_page
+
+  medicaid_eligibility
+  medicaid_eligibility_comments
+  medicaid_eligibility_follow_up
+  medicaid_eligibility_follow_up_completed
+
+  personal_care
+  personal_care_comments
+  personal_care_follow_up
+  personal_care_follow_up_completed
+
+  basic_homemaker
+  basic_homemaker_comments
+  basic_homemaker_follow_up
+  basic_homemaker-follow_up_completed
+
+  enhanced_homemaker
+  enhanced_homemaker_comments
+  enhanced_homemaker_follow_up
+  enhanced_homemaker_follow_up_completed
+
+  respite
+  respite_comments
+  respite_follow_up
+  respite_follow_up_completed
+
+
+
